@@ -8,7 +8,11 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
+
+
 #test {
   margin: 5vh;
 }
@@ -63,6 +67,22 @@
 .banner-btn a:hover {
   color: #000;
 }
+.bottom-img{
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.2;
+  animation: animate 9s linear infinite;
+}
+@keyframes animate{
+  0%{
+    left: 0%;
+  }
+  100%{
+    left: -1900px;
+  }
+}
+
 
 #sideNav {
   width: 200px;
@@ -290,7 +310,6 @@ nav ul li:hover {
   align-items: center;
   text-align: justify;
   flex-direction: row-reverse;
-  border: 2px solid red;
 }
 .Introduction {
   flex: 0.5;
@@ -300,7 +319,7 @@ nav ul li:hover {
   margin: auto;
 }
 .Birth-img img {
-  width: 80%;
+  width: 90%;
   object-fit: contain;
   border-radius: 10px;
 }
@@ -362,7 +381,7 @@ nav ul li:hover {
   margin: auto;
 }
 .Title-img img {
-  width: 95%;
+  width: 70%;
   object-fit: contain;
   border-radius: 10px;
 }
@@ -1008,6 +1027,7 @@ nav ul li:hover {
   text-align: justify;
   flex-direction: row-reverse;
 }
+
 
 /*--Footer--*/
 footer {
